@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Alura Geek</title>
+</head>
+<body>
+    <header class="navbar">
+        <img class="navbar__logo" src="assets/Logo.png" alt="Alura Geek Logo">
+    </header>
+    <main class="main-layout">
+        <section class="products">
+            <h2 class="products__title">Mis productos:</h2>
+            <div class="products__gallery" id="productsGallery">
+                <!-- Las tarjetas de producto se añadirán dinámicamente -->
+            </div>
+        </section>
+        <section class="form-section">
+            <h2 class="form-section__title">Agregar producto:</h2>
+            <form class="form" id="productForm">
+                <input class="form__input" type="text" id="productName" placeholder="Nombre" required>
+                <input class="form__input" type="text" id="productPrice" placeholder="Precio" required>
+                <input class="form__input" type="text" id="productImage" placeholder="URL de Imagen" required>
+                <div class="form__actions">
+                    <button class="button button--blue" type="submit">Enviar</button>
+                    <button class="button button--white" type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
